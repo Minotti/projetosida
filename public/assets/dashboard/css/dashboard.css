@@ -1,0 +1,60 @@
+.middlePage{
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.page-header{
+    padding-bottom: 10px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #EEE;
+}
+
+.page-header h1{
+    color: #EEE;
+    display: inline-block;
+}
+.page-header small{
+    color: #DDD;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.bg-login{
+    background-color: #045745;
+}
+
+.login-opt span {
+    font-size: 16px;
+    color: #0083CF;
+}
+
+.login-opt input[type="radio"]{
+    display: none;
+}
+
+.login-opt label input[type="radio"] ~ i.fa.fa-circle-o{
+    color: #c8c8c8;
+    display: inline;
+}
+
+.login-opt label input[type="radio"] ~ i.fa.fa-dot-circle-o{
+    display: none;
+}
+
+.login-opt label input[type="radio"]:checked ~ i.fa.fa-circle-o{
+    display: none;
+}
+
+.login-opt label input[type="radio"]:checked ~ i.fa.fa-dot-circle-o{
+    color: #0083CF;
+    display: inline;
+}
+
+.login-opt label:hover input[type="radio"] ~ i.fa {
+    color: #0083CF;
+}
