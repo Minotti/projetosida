@@ -70,7 +70,7 @@
         <section class="content-header">
             <h1>
                 Projeto Sida
-                <small>Versão 0.1</small>
+                <small>Versão Beta 0.0.1</small>
             </h1>
             {{--<ol class="breadcrumb">--}}
                 {{--<li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>--}}

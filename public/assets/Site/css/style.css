@@ -17,6 +17,7 @@ a{
     text-decoration: none !important;
     color: #FFF !important;
 }
+.none{display: none !important;}
 .pad-t-20{padding-top: 20px;}
 .pad-b-20{padding-bottom: 20px;}
 .branco{color: #FFF !important;}

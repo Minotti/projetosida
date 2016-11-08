@@ -20,6 +20,14 @@
                     <h3 class="panel-title">Por favor, selecione uma opção</h3>
                 </div>
 
+                @if($errors->has())
+                    <div class="alert alert-danger">
+                        @foreach($errors->all() as $e)
+                            <li>{!! $e !!}</li>
+                        @endforeach
+                    </div>
+                @endif
+
                 <div class="panel-body">
                     {!! Form::open(['url'=>route('login')]) !!}
                     <div class="col-md-4">

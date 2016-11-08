@@ -15,7 +15,7 @@
                         <ul>
                             <li><a href="{{route('home')}}">Home</a></li>
                             <li><a href="{{route('sida')}}">Sida</a></li>
-                            <li><a href="#">Alfabetização</a></li>
+                            <li><a href="{{route('alfabetizacao')}}">Alfabetização</a></li>
                             <li><a href="{{route('contato')}}">Contato</a></li>
                             <li class="pull-right"><a href="{{route('dashboard')}}">Projeto Sida</a></li>
                         </ul>
@@ -49,5 +49,9 @@
 
         </div>
     </footer>
+
+
+    {!! Html::script('assets/js/jquery-3.1.0.min.js') !!}
+    {!! Html::script('assets/Site/js/site.js') !!}
 </body>
 </html>

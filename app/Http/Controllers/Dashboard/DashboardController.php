@@ -58,4 +58,26 @@ class DashboardController extends Controller{
     {
         return Conteudos::where('Conteudo_PalavraChave', $this->rqt->PalavraChave)->first();
     }
+
+    public function entrarSalaAluno()
+    {
+        return view('Dashboard.sala-aluno');
+    }
+
+    public function getRevisaoEscolar()
+    {
+        $disciplinas = [1 => 'Algoritmo'];
+        $conteudo = [1 => '1º C'];
+        return view('Dashboard.escolaridade', compact('disciplinas', 'conteudo'));
+    }
+
+    public function getManual()
+    {
+        return view('Dashboard.manual');
+    }
+
+    public function getSugestoes()
+    {
+        return view('Dashboard.sugestoes');
+    }
 }

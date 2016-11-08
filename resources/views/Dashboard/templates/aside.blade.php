@@ -27,14 +27,43 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu">
             <li class="header">Navegação Principal</li>
-            <li class="active">
+            <li>
                 <a href="{{route('dashboard')}}">
                     <i class="fa fa-fw fa-home"></i> <span>Inicio</span>
                 </a>
             </li>
+
+            @is('professor')
+                <li>
+                    <a href="{{route('lecionar')}}">
+                        <i class="fa fa-fw fa-cubes"></i> <span>Lecionar</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{route('sugestoes')}}">
+                        <i class="fa fa-fw fa-info"></i> <span>Sugestões</span>
+                    </a>
+                </li>
+            @endis
+
+            @is('aluno')
             <li>
-                <a href="{{route('lecionar')}}">
-                    <i class="fa fa-fw fa-cubes"></i> <span>Lecionar</span>
+                <a href="{{route('sala-aluno')}}">
+                    <i class="fa fa-fw fa-sign-in"></i> <span>Sala</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="{{route('revisao-escolar')}}">
+                    <i class="fa fa-fw fa-book"></i> <span>Revisão Escolar</span>
+                </a>
+            </li>
+            @endis
+
+            <li>
+                <a href="{{route('manual')}}">
+                    <i class="fa fa-fw fa-hand-paper-o"></i> <span>Manuais</span>
                 </a>
             </li>
             {{--<li class="treeview">--}}
